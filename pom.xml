@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Licensed to the Austrian Association for Software Tool Integration (AASTI)
+    under one or more contributor license agreements. See the NOTICE file
+    distributed with this work for additional information regarding copyright
+    ownership. The AASTI licenses this file to you under the Apache License,
+    Version 2.0 (the "License"); you may not use this file except in compliance
+    with the License. You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <parent>
+    <groupId>org.openengsb.wrapped</groupId>
+    <artifactId>openengsb-wrapped-parent</artifactId>
+    <version>4</version>
+  </parent>
+
+  <properties>
+    <apache.commons.collections15.version>4.01</apache.commons.collections15.version>
+    <bundle.symbolicName>org.apache.commons.collections15</bundle.symbolicName>
+    <wrapped.groupId>org.apache.commons.collections15</wrapped.groupId>
+    <wrapped.artifactId>collections</wrapped.artifactId>
+    <wrapped.version>${apache.commons.collections15.version}</wrapped.version>
+    <wrapped.mvn.version>${apache.commons.collections15.version}</wrapped.mvn.version>
+    <bundle.namespace>org.apache.commons.collections15</bundle.namespace>
+  </properties>
+
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>org.apache.commons.collections15</artifactId>
+  <version>4.01.w1</version>
+
+  <name>OpenEngSB :: OSGi Wrapped Bundles :: Commons Collections 15</name>
+
+  <packaging>bundle</packaging>
+
+  <description>This Bundle wraps the commons collections 15 Framework.</description>
+
+  <url>http://www.openengsb.org</url>
+
+  <licenses>
+    <license>
+      <name>Apache 2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:git://github.com/openengsb/openengsb-wrapped-org.apache.commons.collections15.git</connection>
+    <developerConnection>scm:git:git@github.com:openengsb/openengsb-wrapped-org.apache.commons.collections15</developerConnection>
+    <url>http://github.com/openengsb/openengsb-wrapped-org.apache.commons.collections15</url>
+  </scm>
+
+  <dependencies>
+    <dependency>
+      <groupId>net.sourceforge.collections</groupId>
+      <artifactId>collections-generic</artifactId>
+      <version>${apache.commons.collections15.version}</version>
+    </dependency>
+  </dependencies>
+
+</project>
+
